@@ -1,0 +1,11 @@
+@keyframes fadeInRight {
+    from {
+        transform: translateX(5rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}

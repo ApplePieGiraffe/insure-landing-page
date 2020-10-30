@@ -1,0 +1,68 @@
+.btn {
+    border: 2px solid var(--color-dark-violet);
+    padding: 1.375rem 2.875rem;
+    background-color: transparent;
+    color: var(--color-dark-violet);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s;
+    outline: none;
+
+    &--black {
+        &:hover {
+            background-color: var(--color-dark-violet);
+            color: white;
+        }
+    }
+
+    &--white {
+        &:hover {
+            background-color: white;
+            color: var(--color-dark-violet);
+        }
+    }
+
+    &--header {
+        @media only screen and (max-width: 800px) {
+            border: 2px solid white;
+            padding: 2rem 8rem;
+            background-color: var(--color-very-dark-violet);
+            color: white;
+            font-size: 2.5rem;
+            font-weight: initial;
+        }
+    }
+}
+
+.hamburger-menu {
+    border: 2px solid var(--color-very-dark-violet);
+    padding: 8px 5px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+
+    &__bar {
+        width: 2.25rem;
+        height: 2px;
+        background-color: var(--color-very-dark-violet);
+        transition: all .3s;
+
+        &:not(:last-child) {
+            margin-bottom: 3px;
+        }
+    }
+}
+
+.hamburger-menu--open .hamburger-menu__bar--top {
+    transform: rotate(45deg) translate(3px, 4px);
+}
+
+.hamburger-menu--open .hamburger-menu__bar--middle {
+    opacity: 0;
+}
+
+.hamburger-menu--open .hamburger-menu__bar--bottom {
+    transform: rotate(-45deg) translate(3px, -4px);
+}
