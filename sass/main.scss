@@ -1,5 +1,8 @@
-@import 'animation';
-@import 'base';
-@import 'component';
-@import 'layout';
-@import 'typography';
+@import 'base/animation';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'layouts/header';
+
+@import 'components/button';
+@import 'components/menu';
