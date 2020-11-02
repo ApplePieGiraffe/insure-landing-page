@@ -1,0 +1,20 @@
+body {
+    overflow-x: hidden;
+}
+
+// ATTRIBUTION
+
+.attribution {
+    position: absolute;
+    z-index: 2;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--color-dark-violet);
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: var(--color-dark-greyish-violet);
+    }
+}

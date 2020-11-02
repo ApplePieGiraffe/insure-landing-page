@@ -1,3 +1,5 @@
+// NAVIGATION
+
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const headerNav = document.querySelector('.header__nav');
 const headerNavItems = document.querySelectorAll('.header__list > *')

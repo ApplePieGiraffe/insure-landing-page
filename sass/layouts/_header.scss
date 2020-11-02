@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    z-index: 3;
     padding: 0 3rem;
     background-color: white;
 
@@ -27,21 +29,13 @@
 
     &__nav {
         position: absolute;
-        bottom: calc(-100vh + 10rem);
+        z-index: 2;
+        top: 10rem;
         left: -3rem;
-        transform: translateY(-101%);
-        z-index: -1;
 
         width: 100vw;
-        height: calc(100vh - 10rem);
+        height: 0;
         padding-top: 6rem;
-
-        background: url(../img/bg-pattern-mobile-nav.svg) var(--color-very-dark-violet);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-
-        // transition: transform .3s ease-out;
 
         @media only screen and (min-width: 800px) {
             position: static;
@@ -55,8 +49,15 @@
         }
         
         &--active {
-            transform: translate(0);
-            transition: transform .3s ease-out;
+            @media only screen and (max-width: 800px) {
+                transform: translate(0);
+                transition: all .3s ease-out;
+                height: calc(100vh - 10rem);
+                background: url(../img/bg-pattern-mobile-nav.svg) var(--color-very-dark-violet);
+                background-position: bottom;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
         }
     }
 

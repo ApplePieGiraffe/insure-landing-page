@@ -1,0 +1,121 @@
+.footer {
+    position: relative;
+    padding: 0 3rem;
+    background-color: var(--color-very-light-grey);
+
+    @media only screen and (min-width: 800px) {
+        padding: 0 5rem;
+    }
+
+    &__content-wrapper {
+        position: relative;
+        z-index: 1;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid #d9d9d9;
+
+        @media only screen and (min-width: 800px) {
+            flex-direction: row;
+            padding: 3rem 0;
+            padding-bottom: 4rem;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 4rem;
+
+        @media only screen and (min-width: 800px) {
+            margin-right: auto;
+            margin-bottom: 0;
+        }
+    }
+
+    &__social-media-links {
+        margin-bottom: 4rem;
+
+        @media only screen and (min-width: 800px) {
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+            
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+
+            & svg {
+                & * {
+                    transition: all .2s;
+
+                }
+
+                &:hover * {
+                    fill: var(--color-very-dark-violet);
+                }
+            }
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: max-content;
+        justify-content: center;
+        padding-top: 5rem;
+
+        @media only screen and (min-width: 600px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, min-content);
+        }
+
+        @media only screen and (min-width: 800px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    background: url('../../img/bg-pattern-footer-mobile.svg') var(--color-very-light-grey);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media only screen and (min-width: 800px) {
+        background: url('../../img/bg-pattern-footer-desktop.svg') var(--color-very-light-grey);
+        background-repeat: no-repeat;
+    }
+}
+
+.subnav {
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+
+    @media only screen and (min-width: 600px) {
+        text-align: start;
+    }
+
+    @media only screen and (min-width: 800px) {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 4rem;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

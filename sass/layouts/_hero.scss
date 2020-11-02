@@ -1,7 +1,4 @@
 .hero {
-    position: relative;
-    z-index: -2;
-    padding: 0 3rem;
     background-color: var(--color-dark-violet);
 
     @media only screen and (min-width: 800px) {
@@ -10,48 +7,62 @@
 
     &__content-wrapper {
         display: flex;
+        flex-direction: column;
         max-width: 1105px;
-        height: 75rem;
         margin: 0 auto;
+
+        @media only screen and (min-width: 800px) {
+            flex-direction: row;
+            height: 75rem;
+        }
     }
 
     &__img-wrapper {
-        z-index: -5;
-        padding-left: 4.5rem;
-
         @media only screen and (min-width: 800px) {
             order: 2;
         }
     }
 
     &__img {
+        object-fit: cover;
         width: 100%;
+        height: 451px;
 
         @media only screen and (min-width: 800px) {
             transform: translateY(13rem);
-        }
-
-        @media only screen and (min-width: 1200px) {
-            width: auto;
+            width: 100%;
+            height: auto;
+            min-height: 450px;
+            // min-height: 550px;
         }
     }
 
     &__text-content-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        margin-top: -2.5rem;
+        padding: 11.5rem 3rem;
+        text-align: center;
 
         @media only screen and (min-width: 800px) {
-            order: 1;
-            flex-basis: 70%;
-            min-width: 51rem;
+            align-items: flex-start;
+            min-width: 500px;
+            width: 565px;
+            margin-top: -2.5rem;
+            padding: 0;
+            padding-right: 3rem;
+            text-align: start;
         }
     }
 
-    &__bar {
-        width: 18.5rem;
-        margin-bottom: 8rem;
+    &__divider {
+        display: none;
+
+        @media only screen and (min-width: 800px) {
+            display: block;
+            margin-bottom: 8rem;
+        }
     }
 
     &__heading {
@@ -59,22 +70,34 @@
     }
 
     &__subheading {
+        max-width: 60rem;
         margin-bottom: 3rem;
+
+        @media only screen and (min-width: 800px) {
+            align-self: flex-start;
+            max-width: initial;
+        }
     }
 
     &__btn {
         position: relative;
-        z-index: 1000;
-        align-self: flex-start;
+        z-index: 1;
+        align-self: center;
+
+        @media only screen and (min-width: 800px) {
+            align-self: flex-start;
+        }
     }
 
     &::before {
         content: url('../../img/bg-pattern-intro-left-mobile.svg');
         position: absolute;
+        top: 66.5rem;
 
         @media only screen and (min-width: 800px) {
             content: url('../../img/bg-pattern-intro-left-desktop.svg');
-            bottom: -42rem;
+            top: initial;
+            bottom: -27rem;
             left: 0;
         }
     }
@@ -82,12 +105,12 @@
     &::after {
         content: url('../../img/bg-pattern-intro-right-mobile.svg');
         position: absolute;
-        z-index: -1;
+        right: 0;
+        bottom: -53rem;
 
         @media only screen and (min-width: 800px) {
             content: url('../../img/bg-pattern-intro-right-desktop.svg');
-            top: -10rem;
-            right: 0;
+            top: 0;
         }
     }
 }

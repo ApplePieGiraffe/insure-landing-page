@@ -3,8 +3,9 @@ body {
     font-size: 2rem;
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-family: 'DM Serif Display', serif;
+    font-weight: 400;
 }
 
 .header {
@@ -31,18 +32,73 @@ h1 {
 .hero {
     &__heading {
         color: white;
-        font-size: 7rem;
-        font-weight: 400;
-        line-height: 8rem;
+        font-size: 5.615rem;
+        line-height: 6rem;
         letter-spacing: 1px;
+
+        @media only screen and (min-width: 800px) {
+            font-size: 7.5rem;
+        }
 
         @media only screen and (min-width: 1200px) {
             font-size: 8.5rem;
+            line-height: 8rem;
         }
     }
 
     &__subheading {
         color: white;
         line-height: 3.5rem;
+    }
+}
+
+.features {
+    &__heading {
+        font-size: 5.615rem;
+        letter-spacing: 1px;
+
+        @media only screen and (min-width: 800px) {
+            font-size: 7.5rem;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 8.5rem;
+        }
+    }
+}
+
+.cta {
+    &__heading {
+        color: white;
+        font-size: 4.5rem;
+        line-height: 5rem;
+
+        @media only screen and (min-width: 800px) {
+            font-size: 5rem;
+            line-height: 7rem;
+        }
+    
+        @media only screen and (min-width: 1000px) {
+            font-size: 6.75rem;
+        }
+    }
+}
+
+.subnav {
+    text-transform: uppercase;
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--color-dark-greyish-violet);
+    }
+
+    &__link {
+        color: var(--color-very-dark-violet);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
