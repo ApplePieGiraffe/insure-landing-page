@@ -224,7 +224,7 @@ h1, h2, h3, h4 {
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
     height: calc(100vh - 10rem);
-    background: url("/img/bg-pattern-mobile-nav.svg") var(--color-very-dark-violet);
+    background: url("../img/bg-pattern-mobile-nav.svg") var(--color-very-dark-violet);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -437,14 +437,14 @@ body {
 }
 
 .hero::before {
-  content: url("/img/bg-pattern-intro-left-mobile.svg");
+  content: url("../img/bg-pattern-intro-left-mobile.svg");
   position: absolute;
   top: 66.5rem;
 }
 
 @media only screen and (min-width: 800px) {
   .hero::before {
-    content: url("/img/bg-pattern-intro-left-desktop.svg");
+    content: url("../img/bg-pattern-intro-left-desktop.svg");
     top: initial;
     bottom: -27rem;
     left: 0;
@@ -452,7 +452,7 @@ body {
 }
 
 .hero::after {
-  content: url("/img/bg-pattern-intro-right-mobile.svg");
+  content: url("../img/bg-pattern-intro-right-mobile.svg");
   position: absolute;
   right: 0;
   bottom: -53rem;
@@ -460,7 +460,7 @@ body {
 
 @media only screen and (min-width: 800px) {
   .hero::after {
-    content: url("/img/bg-pattern-intro-right-desktop.svg");
+    content: url("../img/bg-pattern-intro-right-desktop.svg");
     top: 0;
   }
 }
@@ -624,7 +624,7 @@ body {
 }
 
 .cta__content-wrapper::before {
-  content: url("/img/bg-pattern-how-we-work-mobile.svg");
+  content: url("../img/bg-pattern-how-we-work-mobile.svg");
   position: absolute;
   top: 0;
   right: 0;
@@ -632,7 +632,7 @@ body {
 
 @media only screen and (min-width: 800px) {
   .cta__content-wrapper::before {
-    content: url("/img/bg-pattern-how-we-work-desktop.svg");
+    content: url("../img/bg-pattern-how-we-work-desktop.svg");
   }
 }
 
@@ -664,7 +664,7 @@ body {
   position: relative;
   padding: 0 3rem;
   background-color: var(--color-very-light-grey);
-  background: url("/img/bg-pattern-footer-mobile.svg") var(--color-very-light-grey);
+  background: url("../img/bg-pattern-footer-mobile.svg") var(--color-very-light-grey);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -777,7 +777,7 @@ body {
 
 @media only screen and (min-width: 800px) {
   .footer {
-    background: url("/img/bg-pattern-footer-desktop.svg") var(--color-very-light-grey);
+    background: url("../img/bg-pattern-footer-desktop.svg") var(--color-very-light-grey);
     background-repeat: no-repeat;
   }
 }

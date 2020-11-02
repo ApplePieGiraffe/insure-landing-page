@@ -90,12 +90,12 @@
     }
 
     &::before {
-        content: url('/img/bg-pattern-intro-left-mobile.svg');
+        content: url('../img/bg-pattern-intro-left-mobile.svg');
         position: absolute;
         top: 66.5rem;
 
         @media only screen and (min-width: 800px) {
-            content: url('/img/bg-pattern-intro-left-desktop.svg');
+            content: url('../img/bg-pattern-intro-left-desktop.svg');
             top: initial;
             bottom: -27rem;
             left: 0;
@@ -103,13 +103,13 @@
     }
 
     &::after {
-        content: url('/img/bg-pattern-intro-right-mobile.svg');
+        content: url('../img/bg-pattern-intro-right-mobile.svg');
         position: absolute;
         right: 0;
         bottom: -53rem;
 
         @media only screen and (min-width: 800px) {
-            content: url('/img/bg-pattern-intro-right-desktop.svg');
+            content: url('../img/bg-pattern-intro-right-desktop.svg');
             top: 0;
         }
     }
