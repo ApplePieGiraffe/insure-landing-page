@@ -25,13 +25,13 @@
         }
 
         &::before {
-            content: url('../../img/bg-pattern-how-we-work-mobile.svg');
+            content: url('/img/bg-pattern-how-we-work-mobile.svg');
             position: absolute;
             top: 0;
             right: 0;
     
             @media only screen and (min-width: 800px) {
-                content: url('../../img/bg-pattern-how-we-work-desktop.svg');
+                content: url('/img/bg-pattern-how-we-work-desktop.svg');
             }
         }
     }
