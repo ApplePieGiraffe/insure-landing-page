@@ -22,10 +22,15 @@ function animateNavItems() {
     })
 }
 
+function disableScroll() {
+    document.body.classList.toggle('disable-scroll');
+}
+
 function toggleNav() {
     openHamburgerMenu();
     showNav();
     animateNavItems();
+    disableScroll()
 }
 
 hamburgerMenu.addEventListener('click', toggleNav);

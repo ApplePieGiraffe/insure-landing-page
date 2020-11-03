@@ -288,6 +288,10 @@ body {
   overflow-x: hidden;
 }
 
+.disable-scroll {
+  overflow: hidden;
+}
+
 .attribution {
   position: absolute;
   z-index: 2;
