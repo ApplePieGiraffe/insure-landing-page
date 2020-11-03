@@ -289,7 +289,13 @@ body {
 }
 
 .disable-scroll {
-  overflow: hidden;
+  overflow-y: hidden;
+}
+
+@media only screen and (min-width: 800px) {
+  .disable-scroll {
+    overflow-y: initial;
+  }
 }
 
 .attribution {
@@ -822,6 +828,7 @@ body {
   display: inline-block;
   padding: 1.375rem 3rem;
   background-color: transparent;
+  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -844,7 +851,6 @@ body {
 .btn--white {
   border: 2px solid white;
   color: white;
-  font-size: 1.75rem;
 }
 
 .btn--white:hover {
@@ -884,6 +890,7 @@ body {
 }
 
 .hamburger-menu__bar {
+  display: block;
   width: 2.25rem;
   height: 2px;
   background-color: var(--color-very-dark-violet);

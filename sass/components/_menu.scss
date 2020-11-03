@@ -6,6 +6,7 @@
     outline: none;
 
     &__bar {
+        display: block;
         width: 2.25rem;
         height: 2px;
         background-color: var(--color-very-dark-violet);
